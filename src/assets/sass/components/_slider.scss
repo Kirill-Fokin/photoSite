@@ -1,0 +1,43 @@
+.slider {
+  // display: none;
+    width: 100vw;
+    height: calc(100vh - 200px);
+    position: relative;
+
+    &-button {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      border-radius: 50%;
+      color: rgb(243, 238, 238);
+      font-size: 2rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family:  "Nunito", sans-serif;
+      bottom: 20px;
+      left: 50%;
+      background-color: rgba(255, 255, 255, 0);
+    }
+      &__card {
+        width: 100vh;
+      }
+
+    &__image {
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 200px);
+        object-fit: cover;	
+
+        animation: fade 5s linear infinite;
+        animation-delay: 2.5s;
+
+
+        @keyframes fade {
+          0% { opacity: 1 }
+          50% { opacity: 0 }
+          100% { opacity: 1 }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.call-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+
+  &__button {
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: unset;
+    font-family:  "Nunito", sans-serif;;
+    border-radius: 2rem;
+    transition: all .5s;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+  }
+  
+  .text {
+    max-width: 400px;
+  }
+}
